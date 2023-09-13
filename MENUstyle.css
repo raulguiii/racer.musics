@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap');
+
+
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin" , sans-serif;
+}
+
+html, body{height: 100%}
+
+.sidebar{
+    float: left;
+    width: 250px;
+    padding: 10px 10px; 
+    overflow-y: auto ;
+    background-color: rgb(132, 14 , 201);
+    overflow-x: hidden;
+}
+
+.sidebar-wrapper{
+    padding-bottom: 200px;
+}
+
+
+.sidebar__menu{
+    margin: 20px 0;
+    color: black
+
+}
+
+.sidebar__logo img{
+    max-width: 200px;
+    width: 100%;
+}
+
+.sidebar__menu a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+}
+
+.sidebar__menu svg{
+    margin: 0 20px;
+}
+
+
+.sidebar__menu__item{
+    margin-top: 12px;
+    cursor: pointer; 
+    vertical-align: middle;
+}
+
+.sidebar__menu p.sidebar__menu__title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.sidebar__menu__item__componente{
+    height: 10px;
+    text-align: center;
+    line-height: 20px;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+    
+.sidebar__menu__item span{ 
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.sidebar__menu__item img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.sidebar__playlists{
+    padding: 20px 0; 
+    border-top: 1px solid black
+}
+
+.sidebar__playlists a{
+    margin: 10px;
+    display: block;
+    color: rgb(0, 11, 128);
+    text-decoration: none;
+}
+
+.sidebar__playlists a.hover{
+    color: rgb(0, 238, 255);
+}
+
+
+
+
+
+

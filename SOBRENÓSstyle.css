@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap');
+ 
+ body{
+    background-image: url(https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZ1bmRvJTIwbmVvbiUyMG11c2ljYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+
+
+}
+
+.titulo{
+    font-size: 55px;
+    color: white;
+    font-family: "Impact";
+    text-align: center;
+  
+
+}
+
+
+.texto{
+    color: white;
+    font-style: normal;
+    font-family: "Cabin", noto sans;
+    text-align: center;
+    font-size: 30px;
+}
