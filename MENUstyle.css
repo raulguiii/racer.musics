@@ -15,6 +15,71 @@ body{
 
 html, body{height: 100%}
 
+
+header {
+    background-color: rgb(132, 14 , 201);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.616);
+  }  
+  .search-bar {
+    display: flex;
+    border: 1px solid #3c3c3c;
+    border-radius: 70px;
+    padding: 5px 15px;
+    background-color: #f0f0f0;
+    align-items: center;
+    margin-left: 0%; margin-right: 0%;
+    
+  }
+  
+  .search-input {
+    border: none;
+    background: transparent;
+    color: #333;
+    margin-left: 10px;
+    width: 375px;
+    padding: 8px;
+  }
+  
+  .search-button {
+    background-color: #410446;
+    border: none;
+    color: #fff;
+    padding: 15px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .main-nav li {
+    margin-right: 20px;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .main-nav a:hover {
+    color: #4f03ff;
+  }
+  
+  .user-icon {
+    font-size: 24px;
+  }
+
 .sidebar{
     float: left;
     width: 250px;
@@ -102,6 +167,12 @@ html, body{height: 100%}
 .sidebar__playlists a.hover{
     color: rgb(0, 238, 255);
 }
+
+.mcryan{
+  align-items: center;
+  padding: 50px 30px;
+}
+
 
 
 
