@@ -6,6 +6,7 @@
     <meta name="viewport" content="widht=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="LOGINstyle.css">
     <link rel="icon" type="image/ x-icon" href="https://cdn.discordapp.com/attachments/1145540857886429194/1146966038022455416/0A6658B1-B2FB-4F63-B11C-AE5BD1399560.PNG">
+    <script src="login.js" defer></script>
     <title>Login - RACER Musics</title>
     
 </head>
@@ -15,24 +16,28 @@
         <div class="left-login"> 
             <h1>Escute agora as melhores<br> e suas músicas favoritas!</h1>
         </div>
+        <form id="form">
         <div class="right-login">
             <div class="card-login">
                 <h1>LOGIN</h1>
                 <div class="textfield">
-                    <input type="text" name="usuario" placeholder="Usuário">
+                    <input type="text" id="usuario" placeholder="Usuário" required>
                 </div>
                 
                 <div class="textfield">
-                    <input type="password" name="senha" placeholder="Senha">
+                    <input type="password" id="senha" placeholder="Senha" required>
                 </div>
 
-                    <a href="racermenu.html"><button class="btn-login">Login</button></a>
+                    <a href="racermenu.html"><button class="btn-login" type="submit">Login</button></a>
                 
                     <a href="racercadastro.html">Não tem uma conta?</a>  
                 
+                
                 </div>
-
+            
             </div>
+        </form>
+        
         </div>
     
                         
