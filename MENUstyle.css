@@ -96,7 +96,7 @@ header {
 
 .sidebar__menu{
     margin: 20px 0;
-    color: black
+    color: rgb(0, 0, 0)
 
 }
 
@@ -106,7 +106,7 @@ header {
 }
 
 .sidebar__menu a{
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     display: block;
     padding: 10px 10px;
@@ -124,7 +124,7 @@ header {
 }
 
 .sidebar__menu p.sidebar__menu__title{
-    color: white;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -136,7 +136,7 @@ header {
     display: inline-block;
     color: black;
     font-weight: bold;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
 }
     
 .sidebar__menu__item span{ 
@@ -154,20 +154,19 @@ header {
 
 .sidebar__playlists{
     padding: 20px 0; 
-    border-top: 1px solid black
+    border-top: 1px solid rgb(0, 0, 0)
 }
 
 .sidebar__playlists a{
     margin: 10px;
     display: block;
-    color: rgb(0, 11, 128);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 .sidebar__playlists a.hover{
     color: rgb(0, 238, 255);
 }
-
 
 
 
