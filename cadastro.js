@@ -12,7 +12,8 @@ document.getElementById("form").addEventListener("submit", function(event) {
         alert("Por favor, preencha todos os campos.");
     } else {
         // Se a validação for bem-sucedida, você pode enviar o formulário ou executar outra ação aqui
-        alert("Bem Vindo a Racer Musics!");
+        
+    window.location = "http://127.0.0.1:5500/racermenu.html";
         // Você pode adicionar código para enviar o formulário para o servidor aqui
     }
 });
