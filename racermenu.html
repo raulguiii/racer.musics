@@ -7,6 +7,7 @@
     <link rel="icon" type="image/ x-icon" href="https://cdn.discordapp.com/attachments/1145540857886429194/1146966038022455416/0A6658B1-B2FB-4F63-B11C-AE5BD1399560.PNG">
     <title>Menu - RACER Musics</title>
     <script src="https://kit.fontawesome.com/dadba49628.js" crossorigin="anonymous" defer></script>
+    <script src="menu.js" defer></script>
 </head>
 <body>
     
@@ -19,11 +20,25 @@
     
     <header>
         <div class="search-bar">
-            <input type="text" class="search-input" placeholder="Buscar">
+            <input id="barraDePesquisa" type="text" class="search-input" placeholder="Buscar">
             <button class="search-button"><i class="fa fa-search"></i></button>
         </div>
             <nav class="main-nav">
         </nav>
+        <div class="user-menu">
+          <button class="notification-button"><i class="fa fa-bell"></i></button>
+          <div class="profile-dropdown">
+          </div>
+      </div>
+
+        <!-- Adicione um modal para notificações -->
+        <div id="notification-modal" class="modal">
+            <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Você tem uma nova notificação!</p>
+        </div>
+        </div>
+
     </header>
     
 
@@ -56,7 +71,7 @@
             
             <div class="sidebar__menu">
                 <a href="racermenu.html"><i class="fa-solid fa-house"></i> Início</a>
-                <a href="#"><i class="fa fa-search"></i> Buscar</a>
+                <a href="#" id="botaoDeBuscaSidebar"><i class="fa fa-search"></i> Buscar</a>
                 <a href="#"><i class="fa-solid fa-headphones"></i> Biblioteca</a>
             </div>
 
@@ -134,12 +149,16 @@
             
             <div class="item">
               <img src="https://t2.genius.com/unsafe/202x202/https%3A%2F%2Fimages.genius.com%2F6909370ca5901474fe00fe9c1ebaacaa.1000x1000x1.jpg" />
-              <div class="play">
+              <div class="play" id="play-button1">
                 <span class="fa fa-play"></span>
               </div>
               <h4>Sereia</h4>
               <p>MC Ryan SP, Oruam, Xamã, Orochi...</p>
             </div>
+            <audio id="audio-player1">
+                <source src="sereia orochi.mp3" type="audio/mp3">
+                Seu navegador não suporta a reprodução de áudio.
+            </audio>
   
             
             <div class="item">
@@ -174,12 +193,16 @@
             
             <div class="item">
               <img src="https://t2.genius.com/unsafe/202x202/https%3A%2F%2Fimages.genius.com%2Fd98059a0f2afd10b04b912355c0e8ceb.1000x1000x1.png" />
-              <div class="play">
+              <div class="play" id="play-button2">
                 <span class="fa fa-play"></span>
               </div>
               <h4>As It Was</h4>
               <p>Harry Styles</p>
             </div>
+            <audio id="audio-player2">
+              <source src="harry styles as it was.mp3" type="audio/mp3">
+              Seu navegador não suporta a reprodução de áudio.
+          </audio>
   
             
             <div class="item">
