@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Dela+Gothic+One & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Sedgwick+Ave+Display&display=swap');
+
 
 
 
@@ -11,6 +14,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Cabin" , sans-serif;
+    background-image: url(https://i0.wp.com/www.multarte.com.br/wp-content/uploads/2018/12/fundo-preto-background90-1024x640.jpg?resize=696%2C435&ssl=1);
 }
 
 html, body{height: 100%}
@@ -72,10 +76,14 @@ header {
     transition: color 0.3s;
   }
   
-.search-button:hover {
-  color: #4f03ff;
-}
+  .search-button:hover {
+    color: #4f03ff;
+  }
   
+  .user-icon {
+    font-size: 24px;
+  }
+
 .sidebar{
     float: left;
     width: 250px;
@@ -164,8 +172,15 @@ header {
     color: rgb(0, 238, 255);
 }
 
-
-
+.main{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 40px;
+  
+}
 
 
 
