@@ -72,14 +72,10 @@ header {
     transition: color 0.3s;
   }
   
-  .main-nav a:hover {
-    color: #4f03ff;
-  }
+.search-button:hover {
+  color: #4f03ff;
+}
   
-  .user-icon {
-    font-size: 24px;
-  }
-
 .sidebar{
     float: left;
     width: 250px;
