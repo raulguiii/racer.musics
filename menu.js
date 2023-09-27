@@ -40,8 +40,8 @@ document.getElementById("botaoDeBuscaSidebar").addEventListener("click", functio
             }
         });
 
-        const audioPlayer2 = document.getElementById('audio-player2');
-        const playButton2 = document.getElementById('play-button2');
+        const audioPlayer2 = document.getElementById('audio-player5');
+        const playButton2 = document.getElementById('play-button5');
 
         playButton2.addEventListener('click', () => {
             if (audioPlayer2.paused) {
