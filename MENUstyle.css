@@ -21,7 +21,7 @@ html, body{height: 100%}
 
 
 header {
-    background-color: rgb(132, 14 , 201);
+    background-color: rgba(64, 3, 97, 0.744);
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -49,7 +49,7 @@ header {
   }
   
   .search-button {
-    background-color: #410446;
+    background-color: #000000;
     border: none;
     color: #fff;
     padding: 15px 12px;
@@ -72,12 +72,12 @@ header {
   
   .main-nav a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
     transition: color 0.3s;
   }
   
   .search-button:hover {
-    color: #4f03ff;
+    color: #000000;
   }
   
   .user-icon {
@@ -89,7 +89,7 @@ header {
     width: 250px;
     padding: 10px 10px; 
     overflow-y: auto ;
-    background-color: rgb(132, 14 , 201);
+    background-color: rgba(64, 3, 97, 0.744);
     overflow-x: hidden;
 }
 
@@ -172,24 +172,29 @@ header {
     color: rgb(0, 238, 255);
 }
 
+
 .main-container {
   margin-left: 245px;
   margin-bottom: 100px;
 }
 
+
 .spotify-playlists {
   padding: 20px 40px;
 }
+
 .spotify-playlists h2 {
   color: #ffffff;
   font-size: 22px;
   margin-bottom: 20px;
 }
+
 .spotify-playlists .list {
   display: flex;
   gap: 20px;
   overflow: hidden;
 }
+
 .spotify-playlists .list .item {
   min-width: 140px;
   width: 160px;
@@ -199,31 +204,37 @@ header {
   cursor: pointer;
   transition: all ease 0.4s;
 }
+
 .spotify-playlists .list .item:hover {
   background-color: #252525;
 }
+
 .spotify-playlists .list .item img {
   width: 100%;
   border-radius: 6px;
   margin-bottom: 10px;
 }
+
 .spotify-playlists .list .item .play {
   position: relative;
 }
+
 .spotify-playlists .list .item .play .fa {
   position: absolute;
   right: 10px;
   top: -60px;
   padding: 18px;
-  background-color: #1db954;
+  background-color: rgba(64, 3, 97, 0.744);
   border-radius: 100%;
   opacity: 0;
   transition: all ease 0.4s;
 }
+
 .spotify-playlists .list .item:hover .play .fa {
   opacity: 1;
   transform: translateY(-20px);
 }
+
 .spotify-playlists .list .item h4 {
   color: #ffffff;
   font-size: 14px;
@@ -232,17 +243,18 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .spotify-playlists .list .item p {
   color: #989898;
   font-size: 12px;
   line-height: 20px;
   font-weight: 600;
 }
+
 .spotify-playlists hr {
   margin: 70px 0px 0px;
   border-color: #636363;
 }
-
 
 
 
