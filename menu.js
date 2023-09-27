@@ -183,3 +183,227 @@ document.getElementById("botaoDeBuscaSidebar").addEventListener("click", functio
                 playButton10.innerHTML = '<span class="fa fa-play"></span>';
             }
         });
+
+
+
+        //Player da música 11\\
+        const audioPlayer11 = document.getElementById('audio-player11');
+        const playButton11 = document.getElementById('play-button11');
+
+        playButton11.addEventListener('click', () => {
+            if (audioPlayer11.paused) {
+                audioPlayer11.play();
+                playButton11.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer11.pause();
+                playButton11.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 12\\
+        const audioPlayer12 = document.getElementById('audio-player12');
+        const playButton12 = document.getElementById('play-button12');
+
+        playButton12.addEventListener('click', () => {
+            if (audioPlayer12.paused) {
+                audioPlayer12.play();
+                playButton12.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer12.pause();
+                playButton12.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 13\\
+        const audioPlayer13 = document.getElementById('audio-player13');
+        const playButton13 = document.getElementById('play-button13');
+
+        playButton13.addEventListener('click', () => {
+            if (audioPlayer13.paused) {
+                audioPlayer13.play();
+                playButton13.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer13.pause();
+                playButton13.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 14\\
+        const audioPlayer14 = document.getElementById('audio-player14');
+        const playButton14 = document.getElementById('play-button14');
+
+        playButton14.addEventListener('click', () => {
+            if (audioPlayer14.paused) {
+                audioPlayer14.play();
+                playButton14.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer14.pause();
+                playButton14.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 15\\
+        const audioPlayer15 = document.getElementById('audio-player15');
+        const playButton15 = document.getElementById('play-button15');
+
+        playButton15.addEventListener('click', () => {
+            if (audioPlayer15.paused) {
+                audioPlayer15.play();
+                playButton15.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer15.pause();
+                playButton15.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 16\\
+        const audioPlayer16 = document.getElementById('audio-player16');
+        const playButton16 = document.getElementById('play-button16');
+
+        playButton16.addEventListener('click', () => {
+            if (audioPlayer16.paused) {
+                audioPlayer16.play();
+                playButton16.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer16.pause();
+                playButton16.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 17\\
+        const audioPlayer17 = document.getElementById('audio-player17');
+        const playButton17 = document.getElementById('play-button17');
+
+        playButton17.addEventListener('click', () => {
+            if (audioPlayer17.paused) {
+                audioPlayer17.play();
+                playButton17.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer17.pause();
+                playButton17.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 18\\
+        const audioPlayer18 = document.getElementById('audio-player18');
+        const playButton18 = document.getElementById('play-button18');
+
+        playButton18.addEventListener('click', () => {
+            if (audioPlayer18.paused) {
+                audioPlayer18.play();
+                playButton18.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer18.pause();
+                playButton18.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 19\\
+        const audioPlayer19 = document.getElementById('audio-player19');
+        const playButton19 = document.getElementById('play-button19');
+
+        playButton19.addEventListener('click', () => {
+            if (audioPlayer19.paused) {
+                audioPlayer19.play();
+                playButton19.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer19.pause();
+                playButton19.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 20\\
+        const audioPlayer20 = document.getElementById('audio-player20');
+        const playButton20 = document.getElementById('play-button20');
+
+        playButton20.addEventListener('click', () => {
+            if (audioPlayer20.paused) {
+                audioPlayer20.play();
+                playButton20.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer20.pause();
+                playButton20.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 21\\
+        const audioPlayer21 = document.getElementById('audio-player21');
+        const playButton21 = document.getElementById('play-button21');
+
+        playButton21.addEventListener('click', () => {
+            if (audioPlayer21.paused) {
+                audioPlayer21.play();
+                playButton21.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer21.pause();
+                playButton21.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 22\\
+        const audioPlayer22 = document.getElementById('audio-player22');
+        const playButton22 = document.getElementById('play-button22');
+
+        playButton22.addEventListener('click', () => {
+            if (audioPlayer22.paused) {
+                audioPlayer22.play();
+                playButton22.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer22.pause();
+                playButton22.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 23\\
+        const audioPlayer23 = document.getElementById('audio-player23');
+        const playButton23 = document.getElementById('play-button23');
+
+        playButton23.addEventListener('click', () => {
+            if (audioPlayer23.paused) {
+                audioPlayer23.play();
+                playButton23.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer23.pause();
+                playButton23.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 24\\
+        const audioPlayer24 = document.getElementById('audio-player24');
+        const playButton24 = document.getElementById('play-button24');
+
+        playButton24.addEventListener('click', () => {
+            if (audioPlayer24.paused) {
+                audioPlayer24.play();
+                playButton24.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer24.pause();
+                playButton24.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
