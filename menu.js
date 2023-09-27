@@ -119,3 +119,67 @@ document.getElementById("botaoDeBuscaSidebar").addEventListener("click", functio
                 playButton6.innerHTML = '<span class="fa fa-play"></span>';
             }
         });
+
+
+
+        //Player da música 7\\
+        const audioPlayer7 = document.getElementById('audio-player7');
+        const playButton7 = document.getElementById('play-button7');
+
+        playButton7.addEventListener('click', () => {
+            if (audioPlayer7.paused) {
+                audioPlayer7.play();
+                playButton7.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer7.pause();
+                playButton7.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 8\\
+        const audioPlayer8 = document.getElementById('audio-player8');
+        const playButton8 = document.getElementById('play-button8');
+
+        playButton8.addEventListener('click', () => {
+            if (audioPlayer8.paused) {
+                audioPlayer8.play();
+                playButton8.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer8.pause();
+                playButton8.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 9\\
+        const audioPlayer9 = document.getElementById('audio-player9');
+        const playButton9 = document.getElementById('play-button9');
+
+        playButton9.addEventListener('click', () => {
+            if (audioPlayer9.paused) {
+                audioPlayer9.play();
+                playButton9.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer9.pause();
+                playButton9.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
+
+
+
+        //Player da música 10\\
+        const audioPlayer10 = document.getElementById('audio-player10');
+        const playButton10 = document.getElementById('play-button10');
+
+        playButton10.addEventListener('click', () => {
+            if (audioPlayer10.paused) {
+                audioPlayer10.play();
+                playButton10.innerHTML = '<span class="fa fa-pause"></span>';
+            } else {
+                audioPlayer10.pause();
+                playButton10.innerHTML = '<span class="fa fa-play"></span>';
+            }
+        });
