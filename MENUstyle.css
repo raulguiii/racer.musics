@@ -85,7 +85,7 @@ header {
   background-color: transparent;
   border: none;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
 }
 
@@ -116,9 +116,9 @@ header {
 
 .modal-content {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px rgba(76, 0, 255, 0.905);
   text-align: center;
 }
 
@@ -303,8 +303,5 @@ header {
   margin: 70px 0px 0px;
   border-color: #636363;
 }
-
-
-
 
 
