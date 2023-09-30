@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Dela+Gothic+One & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Sedgwick+Ave+Display&display=swap');
+
+
+
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin" , sans-serif;
+    background-image: url(https://i0.wp.com/www.multarte.com.br/wp-content/uploads/2018/12/fundo-preto-background90-1024x640.jpg?resize=696%2C435&ssl=1);
+}
+
+html, body{height: 100%}
+
+
+header {
+    background-color: rgba(64, 3, 97, 0.744);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.616);
+  }  
+  .search-bar {
+    display: flex;
+    border: 1px solid #3c3c3c;
+    border-radius: 70px;
+    padding: 5px 20px;
+    background-color: #f0f0f0;
+    align-items: center;
+    margin-left: 0%; margin-right: 0%;
+    
+  }
+  
+  .search-input {
+    border: none;
+    background: transparent;
+    color: #333;
+    margin-left: 10px;
+    width: 375px;
+    padding: 8px;
+  }
+  
+  .search-button {
+    background-color: #000000;
+    border: none;
+    color: #fff;
+    padding: 15px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .main-nav li {
+    margin-right: 20px;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+  }
+  
+  .search-button:hover {
+    color: #000000;
+  }
+
+  /* Estilos para a seção de notificação e perfil */
+.notification-button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+}
+
+.notification-button:hover {
+  color: #450af8;
+}
+
+  /* Estilos para o modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px rgba(76, 0, 255, 0.905);
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+
+
+.sidebar{
+    float: left;
+    width: 250px;
+    padding: 10px 10px; 
+    overflow-y: auto ;
+    background-color: rgba(64, 3, 97, 0.744);
+    overflow-x: hidden;
+}
+
+.sidebar-wrapper{
+    padding-bottom: 200px;
+}
+
+
+.sidebar__menu{
+    margin: 20px 0;
+    color: rgb(0, 0, 0)
+
+}
+
+.sidebar__logo img{
+    max-width: 200px;
+    width: 100%;
+}
+
+.sidebar__menu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+}
+
+.sidebar__menu svg{
+    margin: 0 20px;
+}
+
+
+.sidebar__menu__item{
+    margin-top: 12px;
+    cursor: pointer; 
+    vertical-align: middle;
+}
+
+.sidebar__menu p.sidebar__menu__title{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.sidebar__menu__item__componente{
+    height: 10px;
+    text-align: center;
+    line-height: 20px;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+}
+    
+.sidebar__menu__item span{ 
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.sidebar__menu__item img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.sidebar__playlists{
+    padding: 20px 0; 
+    border-top: 1px solid rgb(0, 0, 0)
+}
+
+.sidebar__playlists a{
+    margin: 10px;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.sidebar__playlists a.hover{
+    color: rgb(0, 238, 255);
+}
+
+
+.main-container {
+  margin-left: 245px;
+  margin-bottom: 100px;
+}
+
+
+.spotify-playlists {
+  padding: 20px 40px;
+}
+
+.spotify-playlists h2 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.spotify-playlists .list {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.spotify-playlists .list .item {
+  min-width: 140px;
+  width: 160px;
+  padding: 15px;
+  background-color: #181818;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+
+.spotify-playlists .list .item:hover {
+  background-color: #252525;
+}
+
+.spotify-playlists .list .item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.spotify-playlists .list .item .play {
+  position: relative;
+}
+
+.spotify-playlists .list .item .play .fa {
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: rgba(64, 3, 97, 0.744);
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+.spotify-playlists .list .item:hover .play .fa {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.spotify-playlists .list .item h4 {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spotify-playlists .list .item p {
+  color: #989898;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.spotify-playlists hr {
+  margin: 70px 0px 0px;
+  border-color: #636363;
+}
+
+
