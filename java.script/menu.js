@@ -1,4 +1,3 @@
-// Event listener para esperar que o DOM seja carregado
 document.addEventListener("DOMContentLoaded", function () {
     const notificationModal = document.getElementById("notification-modal");
     const closeNotificationButton = document.querySelector(".close-button");
