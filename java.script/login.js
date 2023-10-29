@@ -1,30 +1,30 @@
-document.getElementById("form").addEventListener("submit", function(event) {
-    
-    
-    // garantir que o form não seja respondido vazio 
+let loginAttempts = 0;
+const maxAttempts = 3;
+
+document.getElementById("form").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // receber os valores do form 
-    var usuario = document.getElementById("usuario").value;
-    var senha = document.getElementById("senha").value;
+    const usuario = document.getElementById("usuario").value;
+    const senha = document.getElementById("senha").value;
 
-    // ver se a conta é valida e existe
-        if (usuario === "raulguiii" && senha === "senha123") {
-          window.location = "file:///C:/Users/rauln/OneDrive/%C3%81rea%20de%20Trabalho/projeto%20desen/racermenu.html";
+    if (usuario === "raulguiii" && senha === "senha123") {
+        window.location = "file:///C:/Users/rauln/OneDrive/%C3%81rea%20de%20Trabalho/projeto%20desen/racermenu.html";
+    } else {
+        loginAttempts++;
+
+        if (loginAttempts >= maxAttempts) {
+            $("button.btn-login").hide();
+            alert("Você provavelmente não tem uma conta, vá para página de cadastro");
         } else {
-            alert("Essa conta não existe!");
+            alert("Tente novamente! Você já gastou " + loginAttempts + " chance(s) de " + maxAttempts);
         }
-
-    })
-
-
+    }
+});
 
 
 
 
-
-
-    // Versão antiga, entrada sem acesso 
+// Versão antiga, entrada sem acesso 
 //    if (usuario === "" || senha === "") {
 //        alert("Por favor, preencha todos os campos.");
 //    } else {
