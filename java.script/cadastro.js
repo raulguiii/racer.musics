@@ -1,23 +1,44 @@
+// Array para armazenar os objetos de usuário
+let usuarios = [];
+
 document.getElementById("form").addEventListener("submit", function(event) {
-    
-    // garantir que o form não tem dados vazios 
     event.preventDefault();
 
-    // receber os valores correspondentes do form
+    // Receber os valores correspondentes do formulário
     var username = document.getElementById("username").value;
     var email = document.getElementById("email").value;
-    var idade = document.getElementById("idade").value;
+    var idade = parseInt(document.getElementById("idade").value);
     var password = document.getElementById("password").value;
 
-    
-    // ver se todos campos do form estão preenchidos 
-    if (username === "" || email === "" || idade=== "" || password === "") {
-        alert("Por favor, preencha todos os campos.");
+    // Verificar se todos os campos do formulário estão preenchidos
+    if (username === "" || email === "" || isNaN(idade) || password === "") {
+        alert("Por favor, preencha todos os campos corretamente.");
     } else {
-        
-    
-        // se tudo estiver certo, você já vai pro menu 
-    window.location = "file:///C:/Users/rauln/OneDrive/%C3%81rea%20de%20Trabalho/projeto%20desen/racermenu.html";
-    }
+        // Criar um objeto de usuário com os dados do formulário
+        var usuario = {
+            username: username,
+            email: email,
+            idade: idade,
+            password: password
+        };
 
-}) 
+        // Adicionar o objeto de usuário ao array
+        usuarios.push(usuario);
+
+        // Limpar o formulário
+        document.getElementById("form").reset();
+        alert("Usuário cadastrado com sucesso!");
+        console.log(usuarios);
+
+        // Verificar se o usuário fez 5 cadastros
+        if (usuarios.length === 5) {
+            removerUsuariosMenorDeIdade();
+        }
+    }
+});
+
+function removerUsuariosMenorDeIdade() {
+    usuarios = usuarios.filter(usuario => usuario.idade >= 18);
+    alert("Usuários com idade menor que 18 removidos do array.");
+    console.log(usuarios);
+}
