@@ -1,20 +1,23 @@
-// Array para armazenar os objetos de usuário
+// armazenamento das respostas do form no array
 let usuarios = [];
 
 document.getElementById("form").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    // Receber os valores correspondentes do formulário
+    
+    // respostas do form 
     var username = document.getElementById("username").value;
     var email = document.getElementById("email").value;
     var idade = parseInt(document.getElementById("idade").value);
     var password = document.getElementById("password").value;
 
-    // Verificar se todos os campos do formulário estão preenchidos
-    if (username === "" || email === "" || isNaN(idade) || password === "") {
+    
+    // evitar receber respostas vazias
+    if (username === "" || email === "" || idade === "" || password === "") {
         alert("Por favor, preencha todos os campos corretamente.");
     } else {
-        // Criar um objeto de usuário com os dados do formulário
+        
+        // objeto com a resposta do form 
         var usuario = {
             username: username,
             email: email,
@@ -22,15 +25,18 @@ document.getElementById("form").addEventListener("submit", function(event) {
             password: password
         };
 
-        // Adicionar o objeto de usuário ao array
+        
+        // adicionar respostas do form ao array
         usuarios.push(usuario);
 
-        // Limpar o formulário
+        
+        // remoção das respostas do form
         document.getElementById("form").reset();
         alert("Usuário cadastrado com sucesso!");
         console.log(usuarios);
 
-        // Verificar se o usuário fez 5 cadastros
+        
+        // ver se foi feito 5 cadastros 
         if (usuarios.length === 5) {
             removerUsuariosMenorDeIdade();
         }
@@ -42,3 +48,32 @@ function removerUsuariosMenorDeIdade() {
     alert("Usuários com idade menor que 18 removidos do array.");
     console.log(usuarios);
 }
+
+      
+
+
+
+
+
+//VERSÃO ANTIGA
+
+
+//----- document.getElementById("form").addEventListener("submit", function(event) {
+//------ Impedir o envio do formulário em branco
+//------    event.preventDefault();
+//------
+//------ Obter os valores dos campos de entrada
+//------    var username = document.getElementById("username").value;
+//------    var email = document.getElementById("email").value;
+//------    var password = document.getElementById("password").value;
+//------
+//------    // Realizar a validação (verificar se os campos estão preenchidos)
+//------    if (username === "" || email === "" || password === "") {
+//------        alert("Por favor, preencha todos os campos.");
+//------    } else {
+//------        // Se a validação for bem-sucedida, você pode enviar o formulário ou executar outra ação aqui
+//------        
+//------    window.location = "file:///C:/Users/rauln/OneDrive/%C3%81rea%20de%20Trabalho/projeto%20desen/racermenu.html";
+//------        // Você pode adicionar código para enviar o formulário para o servidor aqui
+//------   }
+//------})
