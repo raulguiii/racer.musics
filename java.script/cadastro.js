@@ -69,10 +69,10 @@ function removerUsuariosMenorDeIdade() {
           document.getElementById('logradouro').value = data.logradouro || '';
           document.getElementById('bairro').value = data.bairro || '';
       } else {
-          console.error('Failed to fetch CEP data');
+          console.error('CEP não encontrado');
       }
   } catch (error) {
-      console.error('Error fetching CEP data:', error);
+      console.error('Digite um CEP válido:', error);
   }
 }
 
@@ -113,6 +113,7 @@ document.getElementById('cep').addEventListener('blur', function() {
 //------        // Você pode adicionar código para enviar o formulário para o servidor aqui
 //------   }
 //------})
+
 
 
 
