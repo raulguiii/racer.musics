@@ -1,32 +1,49 @@
+// armazenamento das respostas do form no array
 let usuarios = [];
 
 document.getElementById("form").addEventListener("submit", function(event) {
     event.preventDefault();
 
     
+    // respostas do form 
     var username = document.getElementById("username").value;
     var email = document.getElementById("email").value;
     var idade = parseInt(document.getElementById("idade").value);
     var password = document.getElementById("password").value;
+    var cep = document.getElementById("cep").value;
+    var logradouro = document.getElementById("logradouro").value;
+    var bairro = document.getElementById("bairro").value;
+    
 
     
-    if (username === "" || email === "" || isNaN(idade) || password === "") {
+    // evitar receber respostas vazias
+    if (username === "" || email === "" || idade === "" || password === "" || cep === "" || logradouro === "" || bairro === "" ) {
         alert("Por favor, preencha todos os campos corretamente.");
     } else {
-       var usuario = {
+        
+        // objeto com a resposta do form 
+        var usuario = {
             username: username,
             email: email,
             idade: idade,
-            password: password
+            password: password,
+            cep: cep, 
+            logradouro: logradouro,
+            bairro: bairro
         };
 
-       usuarios.push(usuario);
+        
+        // adicionar respostas do form ao array
+        usuarios.push(usuario);
 
-       document.getElementById("form").reset();
+        
+        // remoção das respostas do form
+        document.getElementById("form").reset();
         alert("Usuário cadastrado com sucesso!");
         console.log(usuarios);
 
         
+        // ver se foi feito 5 cadastros 
         if (usuarios.length === 5) {
             removerUsuariosMenorDeIdade();
         }
@@ -38,6 +55,9 @@ function removerUsuariosMenorDeIdade() {
     alert("Usuários com idade menor que 18 removidos do array.");
     console.log(usuarios);
 }
+
+      
+
 
 
 
@@ -64,3 +84,5 @@ function removerUsuariosMenorDeIdade() {
 //------        // Você pode adicionar código para enviar o formulário para o servidor aqui
 //------   }
 //------})
+
+
